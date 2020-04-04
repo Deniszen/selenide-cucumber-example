@@ -16,6 +16,7 @@ public class Hooks {
         baseUrl = "https://www.google.com";
         timeout = 20000;
         fastSetValue = true;
+        reportsFolder = "target/allure-results";
         open("/");
     }
 
@@ -23,6 +24,6 @@ public class Hooks {
     public void after() {
         clearBrowserCache();
         clearBrowserCookies();
-        close();
+        closeWebDriver();
     }
 }

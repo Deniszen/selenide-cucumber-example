@@ -18,7 +18,7 @@ public class GooglePage extends BasePage {
 
     private SelenideElement buttonDoodle = $(byName("btnI"));
 
-    private ElementsCollection suggestions = $$(".suggestions-inner-container");
+    private ElementsCollection suggestions = $$(".sbct");
 
     private ElementsCollection results = $$(byXpath("//div[@class='g']"));
 
